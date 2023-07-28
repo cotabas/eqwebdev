@@ -65,6 +65,12 @@ button:focus-visible {
   display: flex;
 }
 
+#services {
+  background-color: #2e455b;
+  width: 100%;
+
+}
+
 #logoDiv {
   display: flex;
   justify-content: center;
