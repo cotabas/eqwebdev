@@ -94,6 +94,23 @@ section {
 .social:hover {
   opacity: 70%;
 }
+form {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: clamp(45ch, 30vw, 75ch);
+  gap: 1rem;
+}
+
+input {
+  padding-left: 1ch;
+}
+
+textarea {
+  padding-left: 1ch;
+  height: 8rem;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
