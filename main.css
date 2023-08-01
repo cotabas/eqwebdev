@@ -28,7 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -62,12 +61,15 @@ button:focus-visible {
 }
 
 section {
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  height: max(100%, 100vh);
+  width: 100vw;
 }
 
 #intro {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
 }
 
 #services, #contact {
@@ -78,12 +80,11 @@ section {
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
 
 .cartoonArt {
-  width: 400px;
-  height: 400px;
+  width: min(100vw, 400px); 
+  height: ming(100vw, 400px);
 }
 
 .social {
@@ -98,7 +99,7 @@ form {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  width: clamp(45ch, 30vw, 75ch);
+  width: clamp(20ch, 75ch, 90vw);
   gap: 1rem;
 }
 
