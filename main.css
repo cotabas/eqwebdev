@@ -98,6 +98,8 @@ section {
 }
 
 p {
+  font-weight: 500;
+  font-size: 1.25rem;
   width: 80%;
   background-color: #2e455b;
   padding: 2rem;
