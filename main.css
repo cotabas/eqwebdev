@@ -33,8 +33,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 5em;
 }
 
 button {
@@ -57,8 +56,8 @@ button:focus-visible {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
 }
 
 section {
@@ -78,11 +77,18 @@ section {
   max-width: 100vw;
 }
 
+#logoSub {
+  margin-top: 3px;
+  text-align: right;
+}
+
 #clients {
   display: flex;
   flex-wrap: wrap;
   max-width: 100vw;
   gap: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -97,13 +103,10 @@ section {
   align-items: center;
 }
 
-p {
+#services p {
   font-weight: 500;
   font-size: 1.25rem;
-  width: 80%;
-  background-color: #2e455b;
-  padding: 2rem;
-  border-radius: 10px;
+  width: clamp(40ch, 75ch, 90vw);
 }
 
 .clientImg {
@@ -120,6 +123,13 @@ p {
 
 }
 
+.clientTile p {
+  width: min(85vw, calc(400px - 2rem));
+  background-color: #2e455b;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 #services, #contact {
   background-color: #2e455b;
 }
@@ -132,6 +142,7 @@ p {
 }
 
 #logo_text {
+  color: #2e455b;
   margin: 0;
   margin-left: 5px;
 }
