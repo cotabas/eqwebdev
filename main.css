@@ -111,7 +111,7 @@ section {
 
 .clientImg {
   width: min(85vw, 400px);
-  border-radius: 10px;
+  border-radius: 1000px;
 }
 
 .clientTile {
